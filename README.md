@@ -30,9 +30,9 @@ npm run start-aot
 Runs AoT plus gzips and launches the app 
 
 ```
-gulp copy-aot-gzip
 npm run aot
 npm run rollup
+gulp copy-aot-gzip
 http-server
 ```
 

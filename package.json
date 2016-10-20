@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "scripts": {
     "start": "gulp copy-jit && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "hstart": "gulp copy-jit && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "hstart-aot": "npm run aot && npm run rollup && gulp copy-aot && http-server",    
+    "hstart-aot-gzip": "npm run aot && npm run rollup && gulp copy-aot-gzip && http-server",    
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",

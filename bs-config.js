@@ -5,6 +5,9 @@ module.exports = {
     "baseDir": [
       // "./src",
       "./"
-    ]
+    ], 
+    middleware: {      
+      0: null     // removes default `connect-logger` middleware
+    }
   }
 };
