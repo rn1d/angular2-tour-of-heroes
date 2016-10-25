@@ -4,8 +4,8 @@
   "scripts": {
     "start": "gulp copy-jit && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "hstart": "gulp copy-jit && concurrently \"npm run tsc:w\" \"http-server\" ",
-    "hstart-aot": "npm run aot && npm run rollup && gulp copy-aot && http-server",    
-    "hstart-aot-gzip": "npm run aot && npm run rollup && gulp copy-aot-gzip && http-server",    
+    "hstart-aot": "npm run aot && npm run rollup && gulp copy-aot && http-server",
+    "hstart-aot-gzip": "npm run aot && npm run rollup && gulp copy-aot-gzip && http-server",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
@@ -35,6 +35,8 @@
     "zone.js": "^0.6.25"
   },
   "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
@@ -48,7 +50,6 @@
     "rollup-plugin-commonjs": "^5.0.4",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1",
-    "typescript": "^2.0.3",
-    "typings": "^1.4.0"
+    "typescript": "^2.0.3"
   }
 }
